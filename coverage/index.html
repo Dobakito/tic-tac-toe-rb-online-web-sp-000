@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-01T19:06:28+00:00">2021-02-01T19:06:28+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-01T19:08:57+00:00">2021-02-01T19:08:57+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#d3001664050434cd98cce1b792fec77c28231621" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>125</td>
+        <td>130</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -453,388 +453,418 @@
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">  if won(board)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">    puts &quot;Congratulations #{win_combination[0]}&quot;</code>
+          <code class="ruby">  when win_combination[0] == &quot;X&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    &quot;Congratulations X!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">end </code>
+          <code class="ruby">  when win_combination[0] == &quot;O&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    &quot;Congratulations O!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">WIN_COMBINATIONS = [</code>
+          <code class="ruby">  when draw?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">  [0,1,2],</code>
+          <code class="ruby">    &quot;Cat&#39;s Game!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">  [3,4,5],</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">  [6,7,8],</code>
+          <code class="ruby">end </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">  [0,3,6],</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">  [1,4,7],</code>
+          <code class="ruby">WIN_COMBINATIONS = [</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">  [2,5,8],</code>
+          <code class="ruby">  [0,1,2],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">  [0,4,8],</code>
+          <code class="ruby">  [3,4,5],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">  [2,4,6]</code>
+          <code class="ruby">  [6,7,8],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">  ]</code>
+          <code class="ruby">  [0,3,6],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  [1,4,7],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">def won?(board)</code>
+          <code class="ruby">  [2,5,8],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">  WIN_COMBINATIONS.each do |win_combination| </code>
+          <code class="ruby">  [0,4,8],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">    win_index_1 = win_combination[0]</code>
+          <code class="ruby">  [2,4,6]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">    win_index_2 = win_combination[1]</code>
+          <code class="ruby">  ]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">    win_index_3 = win_combination[2]</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">   </code>
+          <code class="ruby">def won?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby">   position_1 = board[win_index_1]</code>
+          <code class="ruby">  WIN_COMBINATIONS.each do |win_combination| </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">   position_2 = board[win_index_2]</code>
+          <code class="ruby">    win_index_1 = win_combination[0]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby">   position_3 = board[win_index_3]</code>
+          <code class="ruby">    win_index_2 = win_combination[1]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
           
           
-          <code class="ruby">   </code>
+          <code class="ruby">    win_index_3 = win_combination[2]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">   if position_1 == position_2 &amp;&amp; position_2 == position_3 &amp;&amp; position_taken?(board, win_index_1)</code>
+          <code class="ruby">   </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">   return win_combination</code>
+          <code class="ruby">   position_1 = board[win_index_1]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
           
           
-          <code class="ruby">   end</code>
+          <code class="ruby">   position_2 = board[win_index_2]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">  end </code>
+          <code class="ruby">   position_3 = board[win_index_3]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
           
           
-          <code class="ruby">  false</code>
+          <code class="ruby">   </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby"> end</code>
+          <code class="ruby">   if position_1 == position_2 &amp;&amp; position_2 == position_3 &amp;&amp; position_taken?(board, win_index_1)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">   return win_combination</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby"> </code>
+          <code class="ruby">   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
           
           
-          <code class="ruby">def full?(board)</code>
+          <code class="ruby">  end </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="96">
           
           
-          <code class="ruby">  if board.any?(&quot; &quot;) </code>
+          <code class="ruby">  false</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="97">
           
           
-          <code class="ruby">    false</code>
+          <code class="ruby"> end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby">  else </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">    true</code>
+          <code class="ruby"> </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">def full?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  if board.any?(&quot; &quot;) </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    false</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">def draw?(board)</code>
+          <code class="ruby">  else </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="104">
           
           
-          <code class="ruby">  if full?(board) == true &amp;&amp; won?(board) == false</code>
+          <code class="ruby">    true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="105">
           
           
-          <code class="ruby">    true</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">  else</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby">    false</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">def draw?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">end  </code>
+          <code class="ruby">  if full?(board) == true &amp;&amp; won?(board) == false</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="110">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="111">
           
           
-          <code class="ruby">def over?(board)</code>
+          <code class="ruby">  else</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="112">
           
           
-          <code class="ruby">  if won?(board) || full?(board) || draw?(board)</code>
+          <code class="ruby">    false</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="113">
           
           
-          <code class="ruby">    true </code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="114">
           
           
-          <code class="ruby">  else</code>
+          <code class="ruby">end  </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="115">
           
           
-          <code class="ruby">    false </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="116">
           
           
-          <code class="ruby">  end </code>
+          <code class="ruby">def over?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="117">
           
           
-          <code class="ruby">end   </code>
+          <code class="ruby">  if won?(board) || full?(board) || draw?(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="118">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    true </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="119">
           
           
-          <code class="ruby">def winner(board)</code>
+          <code class="ruby">  else</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="120">
           
           
-          <code class="ruby">  if won?(board)</code>
+          <code class="ruby">    false </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="121">
           
           
-          <code class="ruby">    board[won?(board)[0]]</code>
+          <code class="ruby">  end </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="122">
           
           
-          <code class="ruby">  else </code>
+          <code class="ruby">end   </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="123">
           
           
-          <code class="ruby">    nil</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="124">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">def winner(board)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby">  if won?(board)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="126">
+          
+          
+          <code class="ruby">    board[won?(board)[0]]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
+          <code class="ruby">  else </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
+          
+          
+          <code class="ruby">    nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
           
           
           <code class="ruby">end</code>
