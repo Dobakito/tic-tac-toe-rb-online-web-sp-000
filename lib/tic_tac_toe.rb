@@ -60,9 +60,8 @@ def play(board)
   turn(board)
   end
   if won(board)
-    puts "Congratulations !"
-  else
-  end 
+    puts "Congratulations #{win_combination[0]}"
+  end
 end 
 
 WIN_COMBINATIONS = [
