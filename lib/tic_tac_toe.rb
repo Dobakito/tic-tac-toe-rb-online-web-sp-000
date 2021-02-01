@@ -43,6 +43,7 @@ def play(board)
    puts "Congratualtions 'board[won?(board)[0]]'"
   elsif draw?(board)
   puts "Cat's Game!"
+  end 
 end 
 
 def turn_count(board)
