@@ -58,8 +58,9 @@ end
 def play(board)
   until over?(board)
   turn(board)
-  if won(board)
-    puts "Congratulations #{win_combination[0]}"
+    end
+  when win_combination[0] == "X"
+    puts
   end
 end 
 
