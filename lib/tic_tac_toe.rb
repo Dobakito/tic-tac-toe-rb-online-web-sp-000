@@ -60,7 +60,7 @@ def play(board)
   turn(board)
   end
   if won?(board)
-    puts "congrats"
+    puts "Congratulations X"
   end
 end 
 
