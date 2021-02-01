@@ -39,8 +39,10 @@ def play(board)
   until over?(board)
   turn(board)
  end 
- if over?(board)
-   
+ if won(board)
+   puts "Congratualtions board[won?(board)[0]]"
+  elsif draw?(board)
+  puts "Cat's Game!"
 end 
 
 def turn_count(board)
@@ -116,7 +118,6 @@ end
 
 def winner(board)
   if won?(board)
-    
     board[won?(board)[0]]
   else 
     nil
