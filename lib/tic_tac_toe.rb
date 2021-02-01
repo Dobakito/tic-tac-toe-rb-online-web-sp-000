@@ -61,6 +61,7 @@ def play(board)
   end
   if won?(board)
     puts "congrats"
+  end
 end 
 
 WIN_COMBINATIONS = [
