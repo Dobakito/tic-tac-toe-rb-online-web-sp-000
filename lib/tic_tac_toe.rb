@@ -35,17 +35,6 @@ def turn(board)
   end
 end
 
-def play(board)
-  until over?(board)
-  turn(board)
- end 
- if won(board)
-   puts "Congratualtions 
-  elsif draw?(board)
-  puts "Cat's Game!"
-  end 
-end 
-
 def turn_count(board)
   counter = 0
   board.each do |space|
@@ -61,6 +50,19 @@ def current_player(board)
     "X"
   else turn_count(board).odd?
     "O"
+  end 
+end 
+
+# play method
+
+def play(board)
+  until over?(board)
+  turn(board)
+ end 
+ if won(board)
+   puts "Congratulations #{board[won?(board)[0]]}"
+  elsif draw?(board)
+    puts "Cat's Game!"
   end 
 end 
 
