@@ -60,7 +60,11 @@ def play(board)
   turn(board)
     end
   when win_combination[0] == "X"
-    puts
+    "Congratulations X!"
+  when win_combination[0] == "O"
+    "Congratulations O!"
+  when draw?(board)
+    "Cat's Game!"
   end
 end 
 
