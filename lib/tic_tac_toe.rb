@@ -58,6 +58,8 @@ end
 def play(board)
   until over?(board)
   turn(board)
+  if won(board)
+    puts "Congratulations!"
   end 
 end 
 
