@@ -59,6 +59,8 @@ def play(board)
   until over?(board)
   turn(board)
   end
+  if won?(board)
+    puts "congrats"
 end 
 
 WIN_COMBINATIONS = [
