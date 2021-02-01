@@ -58,13 +58,6 @@ end
 def play(board)
   until over?(board)
   turn(board)
-    end
-  when win_combination[0] == "X"
-    "Congratulations X!"
-  when win_combination[0] == "O"
-    "Congratulations O!"
-  when draw?(board)
-    "Cat's Game!"
   end
 end 
 
